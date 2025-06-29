@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { ScrollAnimate } from "./motion/scroll-animation";
 import {
 	Tooltip,
@@ -8,12 +9,16 @@ import {
 
 export function Skills() {
 	const skills = [
-		{ name: "React", level: "Advanced", icon: "⚛️" },
-		{ name: "Next.js", level: "Expert", icon: "▲" },
-		{ name: "TypeScript", level: "Advanced", icon: "📘" },
-		{ name: "Tailwind CSS", level: "Expert", icon: "🎨" },
-		{ name: "Node.js", level: "Intermediate", icon: "🟢" },
-		{ name: "Figma", level: "Proficient", icon: "✏️" },
+		{ name: "React", level: "Intermediate", icon: "/react.svg" },
+		{ name: "Next.js", level: "Junior", icon: "/nextjs.svg" },
+		{ name: "TypeScript", level: "Junior", icon: "/typescript.svg" },
+		{
+			name: "Tailwind CSS",
+			level: "Intermediate",
+			icon: "/tailwindcss.svg",
+		},
+		{ name: "Node.js", level: "Junior", icon: "/nodejs.svg" },
+		{ name: "Figma", level: "Junior", icon: "/figma.svg" },
 	];
 
 	return (
@@ -40,10 +45,13 @@ export function Skills() {
 					>
 						<Tooltip>
 							<TooltipTrigger asChild>
-								<div className="flex flex-col items-center p-6 rounded-lg border hover:bg-accent/50 transition-colors cursor-default">
-									<span className="text-2xl mb-2">
-										{skill.icon}
-									</span>
+								<div className="flex flex-col gap-2 items-center p-6 rounded-lg border bg-card hover:bg-card/50 text-card-foreground transition-colors cursor-default">
+									<Image
+										src={skill.icon}
+										alt={skill.name}
+										width={40}
+										height={40}
+									/>
 									<span>{skill.name}</span>
 								</div>
 							</TooltipTrigger>

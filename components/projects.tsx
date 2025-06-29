@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ScrollAnimate } from "./motion/scroll-animation";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function Projects() {
 	const projects = [
@@ -18,7 +19,8 @@ export function Projects() {
 			description:
 				"Next.js and MongoDB powered food delivery web application with cart and ordering features. Built for performance, scalability, and modern UI design.",
 			tags: ["Next.js", "Tailwind CSS", "MongoDB"],
-			link: "https://github.com/hussain-ahmed2/feed-me-food-delivery-website/tree/main",
+			link: "https://github.com/hussain-ahmed2/feed-me-food-delivery-website/",
+			thumbnail: "/feedme-food-delivery.png",
 		},
 		{
 			title: "RecipeRally - Recipe finder",
@@ -26,6 +28,7 @@ export function Projects() {
 				"Discover and explore a variety of recipes with advanced search and filtering options.",
 			tags: ["Laravel", "Tailwind CSS", "Sqlite"],
 			link: "https://github.com/hussain-ahmed2/recipe-website",
+			thumbnail: "/reciperally.png",
 		},
 		{
 			title: "Music Academy",
@@ -33,6 +36,7 @@ export function Projects() {
 				"A music academy website that provides classes and lessons for beginners and advanced players.",
 			tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Aceternity UI"],
 			link: "https://github.com/hussain-ahmed2/music-academy",
+			thumbnail: "/music-academy.png",
 		},
 	];
 
@@ -60,7 +64,15 @@ export function Projects() {
 					>
 						<Card className="h-full flex flex-col hover:shadow-md transition-shadow">
 							<CardHeader>
-								<div className="aspect-video bg-muted rounded-lg mb-4" />
+								<div className="aspect-video bg-muted rounded-lg mb-4">
+									<Image
+										className="w-full h-full object-cover rounded-lg"
+										src={project.thumbnail}
+										alt=""
+										width={800}
+										height={450}
+									/>
+								</div>
 								<h3 className="text-xl font-semibold">
 									{project.title}
 								</h3>

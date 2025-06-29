@@ -31,18 +31,25 @@ export default function About() {
 					<p className="text-neutral-400">
 						I{"'"}m a{" "}
 						<span className="text-foreground font-medium">
-							Frontend Developer
+							Full Stack Developer
 						</span>{" "}
-						with a passion for creating intuitive, responsive
-						digital experiences. My journey in web development began{" "}
-						{new Date().getFullYear() - 2020} years ago when I built
-						my first website.
+						and currently an Intern at Masleap PLC. I specialize in
+						building modern, scalable web applications using
+						Next.js, Node.js, and MongoDB. My journey into web
+						development began {new Date().getFullYear() - 2020}{" "}
+						years ago when I built my first website out of pure
+						curiosity.
 					</p>
 
 					<p className="text-neutral-400">
-						What excites me most is solving complex problems with
-						elegant solutions that balance performance and
-						aesthetics. I believe in the power of
+						I enjoy crafting intuitive user interfaces and writing
+						robust backend logic. What drives me is the challenge of
+						building{" "}
+						<span className="text-foreground font-medium">
+							fast, secure, and elegant
+						</span>{" "}
+						full-stack solutions that offer real value. I strongly
+						believe in the principles of
 						<span className="text-foreground font-medium">
 							{" "}
 							clean code
@@ -56,9 +63,10 @@ export default function About() {
 					</p>
 
 					<p className="text-neutral-400">
-						When I{"'"}m not coding, you{"'"}ll find me exploring
-						new technologies, contributing to open source, or
-						enjoying outdoor activities.
+						Outside of coding, I{"'"}m always learning—exploring new
+						tools, contributing to open source, and staying up to
+						date with the latest in tech. I also enjoy some fresh
+						air and outdoor activities when I unplug.
 					</p>
 
 					<div className="pt-4">
