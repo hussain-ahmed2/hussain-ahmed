@@ -5,7 +5,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ScrollAnimate } from "./motion/scroll-animation";
 
 const navLinks = [
@@ -17,6 +17,7 @@ const navLinks = [
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
 	const pathname = usePathname();
 
 	const toggleMenu = () => {
@@ -27,12 +28,23 @@ export default function Header() {
 		setOpen(false);
 	};
 
+	useEffect(() => {
+		const onScroll = () => {
+			setIsScrolled(window.scrollY > 10);
+		};
+
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
+
 	return (
 		<header>
 			<ScrollAnimate
 				variant="fadeDown"
 				ease="easeIn"
-				className="border-b fixed top-0 left-0 right-0 bg-background z-50"
+				className={`fixed top-0 left-0 right-0 bg-background z-50 border-b transition duration-300 ${
+					isScrolled ? "shadow" : "border-transparent"
+				}`}
 			>
 				<nav className="flex items-center justify-between max-w-6xl mx-auto min-h-16 px-2 sm:px-4">
 					<div className="block md:hidden">
