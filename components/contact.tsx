@@ -49,6 +49,7 @@ export function Contact() {
 						},
 					},
 				});
+				form.reset();
 			} else {
 				toast.error("Something went wrong!", {
 					description: "Please try again later.",
