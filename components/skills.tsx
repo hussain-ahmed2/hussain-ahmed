@@ -5,16 +5,17 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 export function Skills() {
 	const skills = [
+		{ name: "JavaScript", level: "Intermediate", icon: "/javascript.svg" },
+		{ name: "TypeScript", level: "Junior", icon: "/typescript.svg" },
 		{ name: "React", level: "Intermediate", icon: "/react.svg" },
 		{ name: "Next.js", level: "Junior", icon: "/nextjs.svg" },
-		{ name: "TypeScript", level: "Junior", icon: "/typescript.svg" },
-		{
-			name: "Tailwind CSS",
-			level: "Intermediate",
-			icon: "/tailwindcss.svg",
-		},
+		{ name: "Tailwind CSS", level: "Intermediate", icon: "/tailwindcss.svg" },
 		{ name: "Node.js", level: "Junior", icon: "/nodejs.svg" },
 		{ name: "MongoDB", level: "Junior", icon: "/mongodb.svg" },
+		{ name: "Redis", level: "Basic", icon: "/redis.svg" },
+		{ name: "REST APIs", level: "Junior", icon: "/rest-api.svg" },
+		{ name: "Git", level: "Intermediate", icon: "/git.svg" },
+		{ name: "Docker", level: "Basic", icon: "/docker.svg" },
 		{ name: "Figma", level: "Junior", icon: "/figma.svg" },
 	];
 

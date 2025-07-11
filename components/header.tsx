@@ -10,7 +10,7 @@ import { ScrollAnimate } from "./motion/scroll-animation";
 
 const navLinks = [
 	{ href: "/#hero", content: "Home" },
-	{ href: "/#about", content: "About" },
+	{ href: "/#skills", content: "Skills" },
 	{ href: "/#projects", content: "Projects" },
 	{ href: "/#contact", content: "Contact" },
 ];
