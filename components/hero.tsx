@@ -11,7 +11,7 @@ export default function Hero() {
 			{/* Intro greeting */}
 			<ScrollAnimate variant="fadeUp" className="text-neutral-500 font-medium text-lg mb-2 flex items-center gap-1">
 				<Sparkles className="size-5" />
-				<span>Hi, my name is</span>
+				<span>Hello, I&#39;m</span>
 			</ScrollAnimate>
 
 			{/* Name */}
@@ -22,32 +22,32 @@ export default function Hero() {
 			{/* Title */}
 			<ScrollAnimate delay={0.4} variant="fadeUp">
 				<h2 className="text-2xl sm:text-4xl text-gray-500 mb-6 font-medium">
-					A <span className="text-foreground font-bold">Software Developer</span>
+					Full-Stack <span className="text-foreground font-bold">Developer</span>
 				</h2>
 			</ScrollAnimate>
 
-			{/* Brief about with 2 months experience */}
+			{/* Brief about */}
 			<ScrollAnimate delay={0.6} variant="fadeUp" className="max-w-2xl text-gray-400 mb-8 text-sm sm:text-base">
-				I build full-stack web applications using React, Next.js, Node.js, and MongoDB. With 2 months of practical experience, I focus on writing clean, efficient code and delivering
-				responsive user experiences.
+				I craft modern web applications with React, Next.js, Node.js, and MongoDB. Passionate about writing clean, maintainable code and creating seamless user experiences that make a
+				difference.
 			</ScrollAnimate>
 
 			{/* Action buttons */}
 			<div className="flex flex-wrap justify-center gap-4 mb-10">
 				<ScrollAnimate delay={0.7}>
 					<Button variant="ghost" size="lg" asChild>
-						<Link href="/#projects">View Projects</Link>
+						<Link href="/#projects">View My Work</Link>
 					</Button>
 				</ScrollAnimate>
 				<ScrollAnimate delay={0.8}>
 					<Button variant="outline" size="lg" asChild>
-						<Link href="/#contact">Contact Me</Link>
+						<Link href="/#contact">Get In Touch</Link>
 					</Button>
 				</ScrollAnimate>
 				<ScrollAnimate delay={0.9}>
 					<Button variant="default" size="lg" asChild>
 						<Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-							View Resume
+							Resume
 						</Link>
 					</Button>
 				</ScrollAnimate>
